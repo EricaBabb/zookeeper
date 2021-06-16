@@ -36,6 +36,7 @@ app.get('/api/animals/:id', (req, res) => {
     if (result) {
       res.json(result);
     } else {
+        //sends 404 request
       res.send(404);
     }
 });
